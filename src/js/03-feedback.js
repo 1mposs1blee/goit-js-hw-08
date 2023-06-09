@@ -3,9 +3,9 @@ import throttle from 'lodash.throttle';
 const form = document.querySelector('.feedback-form');
 const inputEmailRef = document.querySelector('input');
 const textareaRef = document.querySelector('textarea');
-const LOCALSTORAGE_KEY = 'feedback-form-state';
 const { name: inputEmailName } = inputEmailRef;
 const { name: textareaRefName } = textareaRef;
+const LOCALSTORAGE_KEY = 'feedback-form-state';
 
 const onFormInput = e => {
   const { value: inputEmailValue } = e.currentTarget.elements.email;
